@@ -1,6 +1,7 @@
+const fs = require('fs');//放外面
 const promise1 = new Promise((resolve, reject) => {
   // error-first callback
-  const fs = require('fs');
+  
 
   fs.readFile("test.txt", "utf-8", (err, data) => {
     if (err) {
